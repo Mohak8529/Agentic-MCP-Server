@@ -1,4 +1,8 @@
 # Agentic-MCP-Server
 
-![Overall MCP Flow](./images/overall_mcp_flow.png)
+# MCP Flow
+
+Here’s the overall MCP flow:
+
+![Overall MCP Flow](./images/overall%20mcp%20flow.png)
 
