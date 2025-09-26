@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package tools;
+
+// Shared messages
+message StringRequest {
+  string value = 1;
+}
+
+message StringResponse {
+  string result = 1;
+  string error = 2;  // Empty if no error
+}
+
+// Groq Service
+service GroqService {
+  rpc AskGroq(StringRequest) returns (StringResponse) {}
+}
+
+// Weather Service
+service WeatherService {
+  rpc GetWeather(StringRequest) returns (StringResponse) {}
+}
+
+// Calculate Service
+service CalculateService {
+  rpc Calculate(StringRequest) returns (StringResponse) {}
+}
